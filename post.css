@@ -40,6 +40,10 @@ main {
   margin-bottom: -3px;
 }
 
+.poster-username:active {
+  opacity: 0.7;
+}
+
 .poster-location {
   margin-top: 0px;
   font-size: 11px;
@@ -69,6 +73,10 @@ main {
   cursor: pointer;
 }
 
+.controls-img:active {
+  opacity: 0.7;
+}
+
 .post-likes {
   font-weight: bold;
   font-size: 13px;
@@ -76,9 +84,17 @@ main {
   cursor: pointer;
 }
 
+.post-likes:active {
+  opacity: 0.7;
+}
+
 span {
   font-weight: bold;
   cursor: pointer;
+}
+
+span:active {
+  opacity: 0.7;
 }
 
 .post-caption {

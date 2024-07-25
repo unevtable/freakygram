@@ -28,3 +28,24 @@ const posts = [
     likes: 152,
   },
 ];
+// for (let i = 0; i < posts.length; i++) {
+//   indexOfPost = i;
+// }
+
+let indexOfPost = 0;
+let likes = Number(posts[indexOfPost].likes);
+const likeBtn = document.getElementById('like-btn');
+const likesEl = document.getElementById('likes');
+
+document.addEventListener('DOMContentLoaded', function () {
+  likeBtn.addEventListener('click', function () {
+    likes++;
+    renderLikes();
+  });
+
+  function renderLikes() {
+    likesEl.innerText = `${likes} likes`;
+  }
+});
+
+// }

@@ -25,6 +25,8 @@ body {
 
 .user-avatar-img {
   width: 34px;
+  height: 34px;
+  object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
 }
