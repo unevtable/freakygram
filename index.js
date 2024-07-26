@@ -28,24 +28,41 @@ const posts = [
     likes: 152,
   },
 ];
-// for (let i = 0; i < posts.length; i++) {
-//   indexOfPost = i;
-// }
 
 let indexOfPost = 0;
 let likes = Number(posts[indexOfPost].likes);
 const likeBtn = document.getElementById('like-btn');
+const avatarEl = document.getElementById('avatar');
+const nameEl = document.getElementById('name');
+const locationEl = document.getElementById('location');
+const imageEl = document.getElementById('post-image');
 const likesEl = document.getElementById('likes');
+const usernameEl = document.getElementById('username');
+const captionEl = document.getElementById('caption');
 
 document.addEventListener('DOMContentLoaded', function () {
+  renderShit(indexOfPost);
+
+  imageEl.addEventListener('dblclick', function () {
+    likes++;
+    renderLikes();
+  });
+
   likeBtn.addEventListener('click', function () {
     likes++;
     renderLikes();
   });
 
   function renderLikes() {
-    likesEl.innerText = `${likes} likes`;
+    likesEl.textContent = `${likes} likes`;
+  }
+
+  function renderShit(indexOfPost) {
+    avatarEl.src = posts[indexOfPost].avatar;
+    nameEl.textContent = posts[indexOfPost].name;
+    locationEl.textContent = posts[indexOfPost].location;
+    imageEl.src = posts[indexOfPost].post;
+    renderLikes();
+    captionEl.innerHTML = `<div class="post-caption" id="caption"><span id="username">${posts[indexOfPost].username}</span> ${posts[indexOfPost].caption}</div>`;
   }
 });
-
-// }

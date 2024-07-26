@@ -23,28 +23,24 @@
     <main>
         <div class="post-container">
             <div class="post-head">
-                <img class='poster-avatar-img' src='images/avatar-vangogh.jpg'>
+                <img id="avatar" class='poster-avatar-img'>
                 <div class="poster-info">
-                    <div class="poster-username">
-                        Vincent van Gogh
-                    </div>
-                    <div class="poster-location">
-                        Zudert, Netherlands
-                    </div>
+                    <div class="poster-username" id="name"></div>
+                    <div class="poster-location" id="location"></div>
                 </div>
             </div>
-            <img class="post-image" src="images/post-vangogh.jpg">
+            <img class="post-image" id="post-image">
             <div class="post-footer">
                 <div class="post-controls">
                     <img id="like-btn" class="controls-img" src="images/icon-heart.png">
                     <img class="controls-img" src="images/icon-comment.png">
                     <img class="controls-img" src="images/icon-dm.png">
                 </div>
-                <div class="post-likes" id="likes">21,492 likes</div>
-                <div class="post-caption"><span>vincey1853</span> just took a few mushrooms lol</div>
+                <div class="post-likes" id="likes"></div>
+                <div class="post-caption" id="caption"><span id="username"></span></div>
             </div>
         </div>
-        <div class="post-container">
+        <!-- <div class="post-container">
             <div class="post-head">
                 <img class='poster-avatar-img' src='images/avatar-courbet.jpg'>
                 <div class="poster-info">
@@ -56,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <img class="post-image" src="images/post-courbet.jpg">
+            <img class="post-image" id="post-image" src="images/post-courbet.jpg">
             <div class="post-footer">
                 <div class="post-controls">
                     <img id="like-btn" class="controls-img" src="images/icon-heart.png">
@@ -79,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <img class="post-image" src="images/post-ducreux.jpg">
+            <img class="post-image" id="post-image" src="images/post-ducreux.jpg">
             <div class="post-footer">
                 <div class="post-controls">
                     <img id="like-btn" class="controls-img" src="images/icon-heart.png">
@@ -91,7 +87,7 @@
                     down
                     and WAGM!!</div>
             </div>
-        </div>
+        </div> -->
     </main>
     <script src="index.js"></script>
 </body>
