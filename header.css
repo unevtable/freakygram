@@ -12,9 +12,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  margin-bottom: 8px;
   width: 330px;
-  background-color: white;
   padding: 4px 10px;
+  padding-bottom: 12px;
   border-bottom: 1px solid #c6c6c6;
 }
 
