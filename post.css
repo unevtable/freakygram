@@ -60,8 +60,7 @@ main {
 }
 
 #hide {
-  visibility: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 .poster-location {
