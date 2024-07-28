@@ -31,33 +31,6 @@ const posts = [
   },
 ];
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   renderShit(indexOfPost);
-
-//   imageEl.addEventListener('dblclick', function () {
-//     likes++;
-//     renderLikes();
-//   });
-
-//   likeBtn.addEventListener('click', function () {
-//     likes++;
-//     renderLikes();
-//   });
-
-//   function renderLikes() {
-//     likesEl.textContent = `${likes} likes`;
-//   }
-
-//   function renderShit(indexOfPost) {
-//     avatarEl.src = posts[indexOfPost].avatar;
-//     nameEl.textContent = posts[indexOfPost].name;
-//     locationEl.textContent = posts[indexOfPost].location;
-//     imageEl.src = posts[indexOfPost].post;
-//     renderLikes();
-//     captionEl.innerHTML = `<div class="post-caption" id="caption"><span id="username">${posts[indexOfPost].username}</span> ${posts[indexOfPost].caption}</div>`;
-//   }
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
   const mainEl = document.querySelector('main');
 
